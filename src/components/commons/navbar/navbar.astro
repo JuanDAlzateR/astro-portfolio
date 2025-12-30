@@ -4,10 +4,10 @@ import NotificationBell from "./notificationBell.jsx";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa6";
 
 const links = [
-  { name: "Inicio", href: "/" },
-  { name: "Proyectos", href: "/proyectos" },
-  { name: "Sobre Mi", href: "/about" },
-  { name: "Contacto", href: "/contact" },
+  { name: "Home", href: "/" },
+  { name: "Projects", href: "/proyectos" },
+  { name: "About Me", href: "/about" },
+  { name: "Contact", href: "/contact" },
 ];
 ---
 
@@ -118,10 +118,10 @@ const links = [
     function markActiveLinks() {
       const currentPath = window.location.pathname.replace(/\/$/, "") || "/";
       const desktopLinks = Array.from(
-        document.querySelectorAll("#navbar-links .nav-link")
+        document.querySelectorAll("#navbar-links .nav-link"),
       );
       const mobileLinks = Array.from(
-        document.querySelectorAll("#navbar-links-mobile .nav-link-mobile")
+        document.querySelectorAll("#navbar-links-mobile .nav-link-mobile"),
       );
 
       const allLinks = [...desktopLinks, ...mobileLinks];

@@ -37,21 +37,21 @@ const SkillsList = () => {
   const [openItem, setOpenItem] = useState(null);
 
   const skills = {
-    "¿Qué tecnologías uso?": [
-      "Actualmente trabajo con tecnologías como React, Next.js, Vue.js, Astro, tailwind, Boostrap y demas librerias y frameworks para el frontend y en el backend trabajo con Node.js, Express, MongoDB, Firebase, entre otras.",
+    "Tech Stack": [
+      "I work primarily with Python for data analysis, scripting, and automation, using tools such as Pandas, NumPy, and Jupyter Notebooks. I have experience querying and analyzing data with SQL, applying exploratory data analysis techniques, and building simple machine learning models for regression and classification. I use Git and GitHub for version control and focus on writing clear, reproducible code with well-structured projects.",
     ],
-    "Mi Experiencia": [
-      "Tengo experiencia trabajando en startups y consultoras tecnológicas, desarrollando y maquetando sitios web a partir de diseños en Figma. Para ello, utilizo tecnologías frontend como Astro y React, junto con Tailwind CSS y otras librerías y frameworks para el estilizado y la optimización de interfaces.",
+    "Professional Experience": [
+      "I have professional experience working with structured data, systems, and analytical workflows in business-oriented environments. My work has involved data cleaning, validation, classification, and reporting, as well as supporting system configuration and data consistency within ERP platforms. This experience strengthened my ability to work with real-world data, understand business constraints, and approach problems with analytical rigor.",
     ],
-    "Mi formacion": [
-      "Estudié una tecnicatura en automatización de grado universitaria en el ITU, lo que me brindó las bases en programación. Posteriormente, decidí enfocarme en el desarrollo web y de software estudiando en el ITU. Ademas, realicé diversos cursos, diplomados y capacitaciones en grandes universidades Argentinas, como la UTN y el Instituto Tecnológico Universitario, tambien, complemento mi formación con el aprendizaje autodidacta, lo que me permite mantenerme actualizado con los avances tecnológicos en el desarrollo de software.",
+    "Education": [
+      "I hold a Master’s degree in Mathematical Sciences and a Bachelor’s degree in Mathematics, which provided me with a strong foundation in analytical reasoning, statistics, probability, and linear algebra. My academic background supports my ability to understand data-driven problems deeply and apply mathematical thinking to data analysis and machine learning tasks.",
     ],
-    "¿Cómo trabajo en equipo?": [
-      "Tengo experiencia trabajando en equipos multidisciplinarios, donde me he encargado del desarrollo frontend de aplicaciones web. Para ello, utilizo metodologías ágiles como Scrum y Kanban, además de herramientas de control de versiones como Git y GitHub para gestionar el flujo de trabajo. También cuento con experiencia en el uso de herramientas de gestión de proyectos como Trello y Jira, facilitando la organización y colaboración dentro del equipo.",
+    "Team Collaboration": [
+      "I have worked in collaborative environments alongside technical and non-technical stakeholders, contributing to shared goals related to data quality, system reliability, and analysis. I value clear communication, structured problem-solving, and knowledge sharing, and I am comfortable receiving feedback as part of my continuous learning and professional growth.",
     ],
-    "Metodolgias Agiles": [
-      "He trabajado con metodologías ágiles como Scrum y Kanban. En Scrum, participé en sprints de dos semanas, donde al finalizar cada sprint realizaba un pull request (PR) con mi trabajo, el cual pasaba por una fase de revisión y corrección antes de ser fusionado y enviado a producción. También he trabajado con Kanban, utilizando tableros para gestionar tareas y moverlas según su estado de progreso. Además, participé en reuniones diarias (dailies) para planificar y reportar avances del proyecto, asegurando una comunicación eficiente dentro del equipo.",
-    ],
+    // "Agile Methodologies": [
+    //   "I excel in Agile environments using Scrum and Kanban. In Scrum, I participate in two-week sprints, submitting Pull Requests (PRs) for code review and production deployment. In Kanban, I manage tasks efficiently using boards to track progress. I actively contribute to daily stand-ups to plan and report project milestones, ensuring efficient team communication.",
+    // ],
   };
 
   const toggleItem = (item) => {
@@ -62,7 +62,7 @@ const SkillsList = () => {
     <div className="flex flex-col items-center px-4 text-left">
       <div className="mx-auto w-full max-w-4xl">
         <h2 className="text-white text-center text-4xl font-bold drop-shadow-[2px_2px_0_#7836cf]">
-          Sobre mí y mi trabajo
+          About Me & My Work
         </h2>
         <ul className="mt-8 space-y-4 text-lg drop-shadow-[2px_2px_0_#7836cf]">
           {Object.entries(skills).map(([category, items]) => (
@@ -83,9 +83,8 @@ const SkillsList = () => {
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                       fill="currentColor"
-                      className={`h-6 w-6 shrink-0 transform text-[#6a2cbb] transition-transform ${
-                        openItem === category ? "rotate-180" : ""
-                      }`}
+                      className={`h-6 w-6 shrink-0 transform text-[#6a2cbb] transition-transform ${openItem === category ? "rotate-180" : ""
+                        }`}
                     >
                       <path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path>
                     </svg>
@@ -93,11 +92,10 @@ const SkillsList = () => {
                 </div>
 
                 <div
-                  className={`px-4 transition-all duration-300 ${
-                    openItem === category
+                  className={`px-4 transition-all duration-300 ${openItem === category
                       ? "max-h-[500px] pb-4 opacity-100"
                       : "max-h-0 opacity-0"
-                  }`}
+                    }`}
                 >
                   <p className="text-[0.8em] text-white text-semibold ">
                     {skills[category]}
