@@ -7,9 +7,9 @@ import Verbenas from "../assets/img-projects/challenge-newyze.png";
 
 export const proyectos = [
   {
-    titulo: "App organizacion",
+    titulo: "Organization App",
     descripcion:
-      "App full-stack con funciones CRUD, creacion de tableros y listas, autentificacion de usuarios, desarrollada con MERN stack.",
+      "Full-stack application featuring CRUD operations, board and list creation, and user authentication, engineered with the MERN stack.",
     imagen: imgNote.src,
     tecnologias: ["React", "Tailwind", "Express", "MongoDB"],
     demo: "https://front-react-todo.onrender.com",
@@ -17,9 +17,9 @@ export const proyectos = [
     categoria: "fullstack",
   },
   {
-    titulo: "E-commerce Urban Style",
+    titulo: "Urban Style E-commerce",
     descripcion:
-      "E-commerce funcional de ropa y accesorios, con carrito de compras categorias y pasarela de pago desarrollado en React.",
+      "Functional e-commerce platform for apparel and accessories, featuring shopping cart functionality, categorization, and payment gateway integration, developed in React.",
     imagen: urbanStyle.src,
     tecnologias: ["React", "Tailwind", "Firebase"],
     demo: "https://proyecto-final-rodriguez-sable.vercel.app/",
@@ -27,9 +27,9 @@ export const proyectos = [
     categoria: "fullstack",
   },
   {
-    titulo: "Tienda Artesana",
+    titulo: "Artisan Shop",
     descripcion:
-      "Ecommerce Full-Stack para ver, comprar y vender tus productos, con login para usuarios y vendedores.",
+      "Full-Stack E-commerce platform facilitating product viewing, buying, and selling, with secure login for both users and vendors.",
     imagen:
       "https://i.pinimg.com/736x/c9/70/bf/c970bfbc24489e39418b2c1b1f8f74ef.jpg",
     tecnologias: ["React", "Node", "Express", "MongoDB"],
@@ -38,9 +38,9 @@ export const proyectos = [
     categoria: "fullstack",
   },
   {
-    titulo: "Traker Ingresos-Gastos",
+    titulo: "Income/Expense Tracker",
     descripcion:
-      "App que realiza operaciones CRUD para agregar, ver, editar y eliminar ingresos/gastos.",
+      "Application performing CRUD operations to add, view, edit, and delete income/expense records.",
     imagen:
       "https://i.pinimg.com/736x/a4/85/c4/a485c4da3e78f4f518ddbcdb6637bacf.jpg",
     tecnologias: ["React", "contextAPI"],
@@ -49,9 +49,9 @@ export const proyectos = [
     categoria: "frontend",
   },
   {
-    titulo: "App-clima",
+    titulo: "Weather App",
     descripcion:
-      "Aplicación hecha con React que utiliza una API para mostrar el clima en tiempo real.",
+      "React application leveraging an external API to display real-time weather data.",
     imagen:
       "https://i.pinimg.com/736x/10/6e/cd/106ecd1bfe5ed1c3defb83ea0f87a334.jpg",
     tecnologias: ["React", "contextAPI", "tailwind"],
@@ -62,7 +62,7 @@ export const proyectos = [
   {
     titulo: "Legal Staff",
     descripcion:
-      "Web desarrollada con Astro y Tailwind, embudo de marketing para estudios jurídicos.",
+      "Marketing funnel website developed with Astro and Tailwind for law firms.",
     imagen: legalWeb.src,
     tecnologias: ["Astro", "tailwind", "JavaScript"],
     demo: "https://legal-staff.vercel.app/",
@@ -72,7 +72,7 @@ export const proyectos = [
   {
     titulo: "Medicare",
     descripcion:
-      "Web desarrollada con Astro y Tailwind, embudo de marketing para Obras Sociales.",
+      "Marketing funnel website developed with Astro and Tailwind for Social Security/Health organizations.",
     imagen: mediCare.src,
     tecnologias: ["Astro", "tailwind", "JavaScript"],
     demo: "https://obra-social-landing.vercel.app/",
@@ -82,7 +82,7 @@ export const proyectos = [
   {
     titulo: "AstroFit",
     descripcion:
-      "Web desarrollada con Astro y Tailwind, embudo de marketing para asesorias fitness.",
+      "Marketing funnel website developed with Astro and Tailwind for fitness consultancy.",
     imagen: astroFit.src,
     tecnologias: ["Astro", "tailwind", "JavaScript"],
     demo: "https://gym-page-sandy.vercel.app/",
@@ -90,8 +90,8 @@ export const proyectos = [
     categoria: "frontend",
   },
   {
-    titulo: "100 days coding in Js",
-    descripcion: "100 proyectos, realizados con HTML, CSS y JavaScript.",
+    titulo: "100 Days Coding in JS",
+    descripcion: "A collection of 100 projects implemented using HTML, CSS, and JavaScript.",
     imagen:
       "https://i.pinimg.com/736x/3b/4f/4e/3b4f4e170fcb1795b88f4941f49df0a2.jpg",
     tecnologias: ["Next.js", "Tailwind", "GraphQL"],
@@ -102,7 +102,7 @@ export const proyectos = [
   {
     titulo: "PlaniFy",
     descripcion:
-      "App Web para organizar tus proyectos, hecha con React + Vite, TypeScript y Tailwind para los estilos.",
+      "Web application for project organization, built with React + Vite, TypeScript, and Tailwind for styling.",
     imagen:
       "https://i.pinimg.com/736x/8f/f0/bb/8ff0bbd0e5844ed254bede44522c8338.jpg",
     tecnologias: ["React", "Vite", "TypeScript", "Tailwind"],
@@ -111,9 +111,9 @@ export const proyectos = [
     categoria: "frontend",
   },
   {
-    titulo: "Verbenas Paisajes",
+    titulo: "Verbenas Landscapes",
     descripcion:
-      "Pagina estatica desarrollada con Astro y tailwind como reto para una startup.",
+      "Static landing page developed with Astro and Tailwind as a challenge for a startup.",
     imagen: Verbenas.src,
     tecnologias: ["Astro", "Tailwind", "JavaScript"],
     demo: "https://challenge-neowyze.onrender.com/",
@@ -121,9 +121,9 @@ export const proyectos = [
     categoria: "frontend",
   },
   {
-    titulo: "API REST",
+    titulo: "REST API",
     descripcion:
-      "API RESTful construida con Express y MongoDB para gestionar tareas con operaciones CRUD, Registro de usuarios y login con JWT.",
+      "RESTful API built with Express and MongoDB to manage task CRUD operations, User Registration, and JWT Login.",
     imagen: "https://miro.medium.com/1*47S4iWVwTicFkFL4-Z4uAA.png",
     tecnologias: ["Express", "Node.js", "MongoDB", "Mongoose"],
     demo: "https://back-express-todo.onrender.com",
