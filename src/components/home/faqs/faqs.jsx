@@ -38,20 +38,20 @@ const SkillsList = () => {
 
   const skills = {
     "Tech Stack": [
-      "I currently work with frontend technologies such as React, Next.js, Vue.js, Astro, and Tailwind, utilizing various libraries and frameworks. For backend development, I specialize in Node.js, Express, MongoDB, and Firebase.",
+      "I work primarily with Python for data analysis, scripting, and automation, using tools such as Pandas, NumPy, and Jupyter Notebooks. I have experience querying and analyzing data with SQL, applying exploratory data analysis techniques, and building simple machine learning models for regression and classification. I use Git and GitHub for version control and focus on writing clear, reproducible code with well-structured projects.",
     ],
     "Professional Experience": [
-      "I have experience working in startups and tech consultancies, developing and implementing responsive websites from Figma designs. I leverage frontend technologies like Astro and React, along with Tailwind CSS, to architect optimized and scalable user interfaces.",
+      "I have professional experience working with structured data, systems, and analytical workflows in business-oriented environments. My work has involved data cleaning, validation, classification, and reporting, as well as supporting system configuration and data consistency within ERP platforms. This experience strengthened my ability to work with real-world data, understand business constraints, and approach problems with analytical rigor.",
     ],
     "Education": [
-      "I hold a University Technical Degree in Automation from ITU, where I built my programming foundation. Subsequently, I specialized in Web and Software Development. I have also completed various diplomas and certifications at prestigious Argentine universities like UTN. I continuously complement my formal education with self-directed learning to stay at the forefront of technological advancements.",
+      "I hold a Master’s degree in Mathematical Sciences and a Bachelor’s degree in Mathematics, which provided me with a strong foundation in analytical reasoning, statistics, probability, and linear algebra. My academic background supports my ability to understand data-driven problems deeply and apply mathematical thinking to data analysis and machine learning tasks.",
     ],
     "Team Collaboration": [
-      "I am experienced in collaborating within multidisciplinary teams, leading frontend development for web applications. I utilize Agile methodologies such as Scrum and Kanban, and version control systems like Git/GitHub to manage workflows. My background includes using project management tools like Trello and Jira to facilitate organization and team synergy.",
+      "I have worked in collaborative environments alongside technical and non-technical stakeholders, contributing to shared goals related to data quality, system reliability, and analysis. I value clear communication, structured problem-solving, and knowledge sharing, and I am comfortable receiving feedback as part of my continuous learning and professional growth.",
     ],
-    "Agile Methodologies": [
-      "I excel in Agile environments using Scrum and Kanban. In Scrum, I participate in two-week sprints, submitting Pull Requests (PRs) for code review and production deployment. In Kanban, I manage tasks efficiently using boards to track progress. I actively contribute to daily stand-ups to plan and report project milestones, ensuring efficient team communication.",
-    ],
+    // "Agile Methodologies": [
+    //   "I excel in Agile environments using Scrum and Kanban. In Scrum, I participate in two-week sprints, submitting Pull Requests (PRs) for code review and production deployment. In Kanban, I manage tasks efficiently using boards to track progress. I actively contribute to daily stand-ups to plan and report project milestones, ensuring efficient team communication.",
+    // ],
   };
 
   const toggleItem = (item) => {
@@ -83,9 +83,8 @@ const SkillsList = () => {
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                       fill="currentColor"
-                      className={`h-6 w-6 shrink-0 transform text-[#6a2cbb] transition-transform ${
-                        openItem === category ? "rotate-180" : ""
-                      }`}
+                      className={`h-6 w-6 shrink-0 transform text-[#6a2cbb] transition-transform ${openItem === category ? "rotate-180" : ""
+                        }`}
                     >
                       <path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path>
                     </svg>
@@ -93,11 +92,10 @@ const SkillsList = () => {
                 </div>
 
                 <div
-                  className={`px-4 transition-all duration-300 ${
-                    openItem === category
+                  className={`px-4 transition-all duration-300 ${openItem === category
                       ? "max-h-[500px] pb-4 opacity-100"
                       : "max-h-0 opacity-0"
-                  }`}
+                    }`}
                 >
                   <p className="text-[0.8em] text-white text-semibold ">
                     {skills[category]}
